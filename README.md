@@ -20,3 +20,7 @@ Cette application est développée pour aider les utilisateurs à suivre les nom
 1.API (Pour les données COVID): https://rapidapi.com/axisbits-axisbits-default/api/covid-19-statistics/playground/apiendpoint_191c58c7-a995-4024-a5ee-41043d79e542
 
 2.API: (Pour les informations sur les pays): https://restcountries.com/
+
+### Gif
+
+<img src="covidapp.gif"/>
