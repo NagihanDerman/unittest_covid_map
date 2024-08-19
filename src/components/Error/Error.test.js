@@ -33,19 +33,3 @@ describe("error bileşeni testleri", () => {
     expect(retryMock).toHaveBeenCalled();
   });
 });
-
-/*
-
-  afterEach(() => {
-    console.log("her testten sonra");
-  });
-
-  beforeAll(() => {
-    console.log("bütün testlerden önces");
-  });
-
-  afterAll(() => {
-    console.log("bütün testlerden sonra");
-  });
-
-*/

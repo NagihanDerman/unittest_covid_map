@@ -11,7 +11,7 @@ const Loader = ({ type }) => {
       </div>
     );
 
-  // 16 elemana sahip bir dizi oluşturduk
+  // 16 elemana sahip bir dizi olusturma
   const arr = new Array(16).fill();
 
   return arr.map(() => (

@@ -5,7 +5,7 @@ import { headers } from "../utils/constant";
 export const getData = createAsyncThunk(
   "covid/getData",
   async ({ code, query }) => {
-    // api'a gönderilcek parametreleri hazırla
+    // api'a gönderilecek parametreleri hazırlama
     const params = { iso: code, q: query };
 
     // isocode'a göre ülkenin covid bilgilerini alan istek
@@ -27,17 +27,17 @@ export const getData = createAsyncThunk(
     // her iki api isteğini aynı anda gönder
     const responses = await Promise.all([req1, req2]);
 
-    // cregion veirlerini bir üst nesne ile aynı düzeye çıkardık
+    // cregion veirlerini bir üst nesne ile aynı düzeye çıkarma
     const covid = {
       ...responses[0].data.data[0],
       ...responses[0].data.data[0].region,
     };
 
-    // gereksiz verileri kaldırdık
+    // gereksiz verileri kaldırma
     delete covid.region;
     delete covid.cities;
 
-    // aksiyonun payload'ı return edildi
+    // aksiyonun payload'ı return eder
     return { covid, country: responses[1].data[0] };
   }
 );

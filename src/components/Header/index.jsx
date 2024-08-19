@@ -12,7 +12,7 @@ const Header = () => {
     // inputtaki veriyi al
     const text = e.target[0].value;
 
-    //kullanıcyı detay sayfasına yönlendir
+    //kullaniciyi detay sayfasına yönlendir
     navigate(`detail?q=${text}`);
   };
 

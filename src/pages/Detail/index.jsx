@@ -19,7 +19,7 @@ const Detail = () => {
     dispatch(getData({ code, query }));
   }, [code, query]);
 
-  // covid nesnenesini diziye çevirelim
+  // covid nesnenesini diziye çevirme
   const covidArr = Object.entries(data?.covid || {});
 
   return (

@@ -6,7 +6,7 @@ import { thunk } from "redux-thunk";
 import { BrowserRouter } from "react-router-dom";
 import { storeData } from "../../utils/constant";
 
-// test ortamındaki store'un krulumunu yap projede thunk kullandığımız için onuda tanıtıyoruz
+// test ortamındaki store'un krulumunu yapma
 const mockStore = configureStore([thunk]);
 
 it("yüklenme durumunda loader bileşenleri ekrana basılır", () => {
